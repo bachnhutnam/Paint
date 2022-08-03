@@ -1,0 +1,29 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #7b7b7b;
+    margin: 20px auto;
+    text-align: center;
+}
+#tools {
+    margin: auto;
+    /* background: black; */
+    padding: 10px;
+    /* border: 1px solid red; */
+}
+
+#tools button {
+    width: 80px;
+    height: 40px;
+    padding: 0px 0px;
+}
+
+#board {
+    width: 800px;
+    height: 500px;
+}
+
+

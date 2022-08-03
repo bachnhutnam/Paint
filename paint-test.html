@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color: #999;">
+        <div id="tools">
+            <button onclick="undo()">Undo</button>
+            <button onclick="redo()">Redo</button>
+            <button onclick="reset()">reset</button>
+
+            <button onclick="setTool('pen')">Pen</button>
+            <button onclick="setTool('line')">Line</button>
+            <button onclick="setTool('rect')">Rect</button>
+
+            <button onclick="changelineWidth(1)">1</button>
+            <button onclick="changelineWidth(2)">2</button>
+            <button onclick="changelineWidth(3)">3</button>
+            <button onclick="changelineWidth(4)">4</button>
+            <button onclick="changelineWidth(5)">5</button>
+
+            <button onclick="changeColor('#ff0000')">Red</button>
+            <button onclick="changeColor('#000000')">Black</button>
+            <button onclick="changeColor('#00ff00')">Green</button>
+            <button onclick="changeColor('#0919f3')">Blue</button>
+        </div>
+        <canvas id="board"></canvas>
+    <script type="text/javascript" src="./paint.js"></script>
+    <script type="text/javascript">
+        function changeColor(color) {
+            p.color = color;
+        }
+        function changelineWidth(lineWidth) {
+            p.lineWidth = lineWidth;
+        }
+        function setTool(tool) {
+            p.tool = tool;
+        }
+        function undo() {
+            p.undo;
+        }
+        function redo() {
+            p.redo;
+        }
+    </script>
+</body>
+</html>
